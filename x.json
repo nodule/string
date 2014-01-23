@@ -68,7 +68,7 @@
       "description": "Splits a String object into an array of strings by separating the string into substrings.",
       "ns": "string",
       "name": "split",
-      "fn": "output.out = input.string.split(input.seperator, input.limit)\n"
+      "fn": "output.out = input.in.split(input.seperator, input.limit)\n"
     }
   ],
   "twigs": []
