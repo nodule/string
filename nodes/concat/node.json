@@ -1,0 +1,23 @@
+{
+  "name": "concat",
+  "ns": "string",
+  "description": "Combines the text of two or more strings and returns a new string.",
+  "phrases": {
+    "active": "Concatenating string"
+  },
+  "ports": {
+    "input": {
+      "in": {
+        "title": "String Parts",
+        "type": "array",
+        "required": true
+      }
+    },
+    "output": {
+      "out": {
+        "title": "String",
+        "type": "string"
+      }
+    }
+  }
+}
