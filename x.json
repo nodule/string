@@ -47,12 +47,6 @@
             "type": "string",
             "description": "Specifies the character(s) to use for separating the string. The separator is treated as a string or a regular expression. If separator is omitted, the array returned contains one element consisting of the entire string. If separator is an empty string, str is converted to an array of characters.",
             "required": true
-          },
-          "limit": {
-            "title": "Limit",
-            "type": "number",
-            "description": "Integer specifying a limit on the number of splits to be found. The split method still splits on every match of separator, but it truncates the returned array to at most limit elements.",
-            "default": null
           }
         },
         "output": {
@@ -68,7 +62,7 @@
       "description": "Splits a String object into an array of strings by separating the string into substrings.",
       "ns": "string",
       "name": "split",
-      "fn": "output.out = input.in.split(input.seperator, input.limit)\n"
+      "fn": "output.out = input.in.split(input.seperator)\n"
     }
   ],
   "twigs": []
