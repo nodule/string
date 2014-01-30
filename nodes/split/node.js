@@ -1,1 +1,1 @@
-output.out = input.in.split(input.seperator)
+output.out = input. in .split(input.seperator)
