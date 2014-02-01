@@ -71,6 +71,40 @@
             "type": "string",
             "required": true
           },
+          "match": {
+            "title": "Match",
+            "type": "string",
+            "required": true
+          },
+          "replace": {
+            "title": "Replacement",
+            "type": "string",
+            "required": true
+          }
+        },
+        "output": {
+          "out": {
+            "title": "String",
+            "type": "string"
+          }
+        }
+      },
+      "phrases": {
+        "active": "Replacing string"
+      },
+      "description": "Replaces a string within another string",
+      "ns": "string",
+      "name": "replace",
+      "fn": "var r = new RegExp(input.match, 'g');\noutput.out = input.in.replace(r, input.replace)\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "String",
+            "type": "string",
+            "required": true
+          },
           "seperator": {
             "title": "Seperator",
             "type": "string",
