@@ -1,0 +1,28 @@
+{
+  "name": "append",
+  "ns": "string",
+  "description": "Appends a string to an other string",
+  "phrases": {
+    "active": "Appending string"
+  },
+  "ports": {
+    "input": {
+      "in": {
+        "title": "String",
+        "type": "string",
+        "required": true
+      },
+      "append": {
+        "title": "Other String",
+        "type": "string",
+        "required": true
+      }
+    },
+    "output": {
+      "out": {
+        "title": "String",
+        "type": "string"
+      }
+    }
+  }
+}

@@ -14,6 +14,35 @@
       "ports": {
         "input": {
           "in": {
+            "title": "String",
+            "type": "string",
+            "required": true
+          },
+          "append": {
+            "title": "Other String",
+            "type": "string",
+            "required": true
+          }
+        },
+        "output": {
+          "out": {
+            "title": "String",
+            "type": "string"
+          }
+        }
+      },
+      "phrases": {
+        "active": "Appending string"
+      },
+      "description": "Appends a string to an other string",
+      "ns": "string",
+      "name": "append",
+      "fn": "output.out = input.in + input.append\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
             "title": "String Parts",
             "type": "array",
             "required": true
