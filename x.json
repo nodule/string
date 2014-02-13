@@ -166,7 +166,7 @@
       "description": "Splits a String object into an array of strings by separating the string into substrings.",
       "ns": "string",
       "name": "split",
-      "fn": "output = function(cb) {\n\n  try {\n\n    if(input.regexp) {\n      cb({ out: input.in.split(new RegExp(input.regexp)) });\n    } else if(input.seperator) {\n      cb({ out: input.in.split(input.seperator) });\n    } else {\n      cb({ out: [] });\n    }\n\n    done();\n\n  } catch(err) {\n    cb({ error: err });\n    done();\n  }\n\n};\n"
+      "fn": "output = function(cb) {\n\n  try {\n\n    if(input.regexp) {\n\n      var m = input.regexp.match(/^\\/(.*)\\/([gmi]*)/);\n      if(m.length === 3) {\n        cb({ out: input.in.split(new RegExp(m[1]), m[2]) });\n      } else {\n        cb({ error: ['RegExp not recognized:', input.regexp, 'required format: /..../gm' ].join(' ') });\n      }\n    } else if(input.seperator) {\n      cb({ out: input.in.split(input.seperator) });\n    } else {\n      cb({ out: [] });\n    }\n\n    done();\n\n  } catch(err) {\n    cb({ error: err });\n    done();\n  }\n\n};\n"
     }
   ],
   "twigs": []
