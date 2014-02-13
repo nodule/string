@@ -16,7 +16,13 @@
         "title": "Seperator",
         "type": "string",
         "description": "Specifies the character(s) to use for separating the string. The separator is treated as a string or a regular expression. If separator is omitted, the array returned contains one element consisting of the entire string. If separator is an empty string, str is converted to an array of characters.",
-        "required": true
+        "required": true,
+        "default": null
+      },
+      "regexp": {
+        "title": "Regular Expression",
+        "type": "string",
+        "default": null
       }
     },
     "output": {
