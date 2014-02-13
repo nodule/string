@@ -1,0 +1,34 @@
+{
+  "name":"regexp",
+  "ns":"utils",
+  "description":"Execute a regular expression",
+  "phrases": {
+    "active": "RegExping {{input.regexp}} {{input.flags}}"
+  },
+  "ports":{
+    "input":{
+      "in":{
+        "type":"string",
+        "title":"Data",
+        "required": true
+      },
+      "regexp":{
+        "type":"string",
+        "title":"A Regular Expression",
+        "required": true
+      },
+      "flags":{
+        "type":"string",
+        "title":"Flags",
+        "default": "g"
+      }
+    },
+    "output":{
+      "out":{
+        "type":"array",
+        "title":"Results",
+        "required": true
+      }
+    }
+  }
+}
