@@ -1,6 +1,6 @@
 {
   "name":"regexp",
-  "ns":"utils",
+  "ns":"string",
   "description":"Execute a regular expression",
   "phrases": {
     "active": "RegExping {{input.regexp}} {{input.flags}}"
