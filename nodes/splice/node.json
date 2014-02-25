@@ -1,0 +1,43 @@
+{
+  "name": "splice",
+  "ns": "string",
+  "async": true,
+  "description": "Replaces part of a string by index number and length",
+  "phrases": {
+    "active": "Splicing string"
+  },
+  "require": {
+    "underscore.string": "0.x.x"
+  },
+  "ports": {
+    "input": {
+      "in": {
+        "title": "String",
+        "type": "string",
+        "async": true,
+        "required": true
+      },
+      "index": {
+        "title": "Index",
+        "type": "number",
+        "required": true
+      },
+      "length": {
+        "title": "Length",
+        "type": "number",
+        "required": true
+      },
+      "substring": {
+        "title": "Substring",
+        "type": "string",
+        "required": true
+      }
+    },
+    "output": {
+      "out": {
+        "title": "String",
+        "type": "string"
+      }
+    }
+  }
+}

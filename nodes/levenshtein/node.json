@@ -1,0 +1,38 @@
+{
+  "name": "insert",
+  "ns": "string",
+  "description": "Inserts a substring at the index given",
+  "phrases": {
+    "active": "Inserting substring"
+  },
+  "async": true,
+  "require": {
+    "underscore.string": "0.x.x"
+  },
+  "ports": {
+    "input": {
+      "in": {
+        "title": "String",
+        "type": "string",
+        "async": true,
+        "required": true
+      },
+      "index": {
+        "title": "Index",
+        "type": "number",
+        "required": true
+      },
+      "substring": {
+        "title": "Substring",
+        "type": "string",
+        "required": true
+      }
+    },
+    "output": {
+      "out": {
+        "title": "Distance",
+        "type": "number"
+      }
+    }
+  }
+}

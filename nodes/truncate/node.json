@@ -1,0 +1,33 @@
+{
+  "name": "truncate",
+  "ns": "string",
+  "async": true,
+  "description": "Truncate a string to the length specified",
+  "phrases": {
+    "active": "Truncating string to a length of {{input.length}}"
+  },
+  "require": {
+    "underscore.string": "0.x.x"
+  },
+  "ports": {
+    "input": {
+      "in": {
+        "title": "String",
+        "type": "string",
+        "async": true,
+        "required": true
+      },
+      "length": {
+        "title": "Length",
+        "type": "number",
+        "required": true
+      }
+    },
+    "output": {
+      "out": {
+        "title": "String",
+        "type": "string"
+      }
+    }
+  }
+}

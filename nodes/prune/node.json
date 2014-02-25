@@ -1,0 +1,38 @@
+{
+  "name": "prune",
+  "ns": "string",
+  "async": true,
+  "description": "Elegant version of truncate. Makes sure the pruned string does not exceed the original length. Avoid half-chopped words when truncating.",
+  "phrases": {
+    "active": "Pruning string to a length of {{input.length}}"
+  },
+  "require": {
+    "underscore.string": "0.x.x"
+  },
+  "ports": {
+    "input": {
+      "in": {
+        "title": "String",
+        "type": "string",
+        "async": true,
+        "required": true
+      },
+      "length": {
+        "title": "Length",
+        "type": "number",
+        "required": true
+      },
+      "prune": {
+        "title": "Prune string",
+        "type": "string",
+        "default": "..."
+      }
+    },
+    "output": {
+      "out": {
+        "title": "String",
+        "type": "string"
+      }
+    }
+  }
+}

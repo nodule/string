@@ -1,0 +1,33 @@
+{
+  "name": "chop",
+  "ns": "string",
+  "async": true,
+  "description": "Chop a string in equal parts.",
+  "phrases": {
+    "active": "Chopping string"
+  },
+  "require": {
+    "underscore.string": "0.x.x"
+  },
+  "ports": {
+    "input": {
+      "in": {
+        "title": "String",
+        "type": "string",
+        "async": true,
+        "required": true
+      },
+      "step": {
+        "title": "Step",
+        "type": "number",
+        "required": true
+      }
+    },
+    "output": {
+      "out": {
+        "title": "String",
+        "type": "string"
+      }
+    }
+  }
+}

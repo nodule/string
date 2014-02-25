@@ -1,0 +1,28 @@
+{
+  "name": "camelize",
+  "ns": "string",
+  "async": true,
+  "description": "Converts underscored or dasherized string to a camelized one. Begins with a lower case letter unless it starts with an underscore or string",
+  "phrases": {
+    "active": "Camelizing string"
+  },
+  "require": {
+    "underscore.string": "0.x.x"
+  },
+  "ports": {
+    "input": {
+      "in": {
+        "title": "String",
+        "type": "string",
+        "async": true,
+        "required": true
+      }
+    },
+    "output": {
+      "out": {
+        "title": "String",
+        "type": "string"
+      }
+    }
+  }
+}

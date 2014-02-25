@@ -1,0 +1,28 @@
+{
+  "name": "escapeHTML",
+  "ns": "string",
+  "async": true,
+  "description": "Converts HTML special characters to their entity equivalents",
+  "phrases": {
+    "active": "Escaping HTML"
+  },
+  "require": {
+    "underscore.string": "0.x.x"
+  },
+  "ports": {
+    "input": {
+      "in": {
+        "title": "String",
+        "type": "string",
+        "async": true,
+        "required": true
+      }
+    },
+    "output": {
+      "out": {
+        "title": "String",
+        "type": "string"
+      }
+    }
+  }
+}

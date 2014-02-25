@@ -1,0 +1,33 @@
+{
+  "name": "include",
+  "ns": "string",
+  "async": true,
+  "description": "Indicates whether a string includes another string",
+  "phrases": {
+    "active": "Determining string inclusion"
+  },
+  "require": {
+    "underscore.string": "0.x.x"
+  },
+  "ports": {
+    "input": {
+      "in": {
+        "title": "String",
+        "type": "string",
+        "async": true,
+        "required": true
+      },
+      "include": {
+        "title": "Include",
+        "type": "string",
+        "required": true
+      }
+    },
+    "output": {
+      "out": {
+        "title": "String",
+        "type": "string"
+      }
+    }
+  }
+}

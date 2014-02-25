@@ -1,0 +1,28 @@
+{
+  "name": "unescapeHTML",
+  "ns": "string",
+  "async": true,
+  "description": "Converts entity characters to HTML equivalents",
+  "phrases": {
+    "active": "Unescaping HTML"
+  },
+  "require": {
+    "underscore.string": "0.x.x"
+  },
+  "ports": {
+    "input": {
+      "in": {
+        "title": "String",
+        "type": "string",
+        "async": true,
+        "required": true
+      }
+    },
+    "output": {
+      "out": {
+        "title": "String",
+        "type": "string"
+      }
+    }
+  }
+}

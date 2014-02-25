@@ -43,6 +43,185 @@
       "ports": {
         "input": {
           "in": {
+            "title": "String",
+            "type": "string",
+            "async": true,
+            "required": true
+          }
+        },
+        "output": {
+          "out": {
+            "title": "String",
+            "type": "string"
+          }
+        }
+      },
+      "require": {
+        "underscore.string": "0.x.x"
+      },
+      "phrases": {
+        "active": "Camelizing string"
+      },
+      "description": "Converts underscored or dasherized string to a camelized one. Begins with a lower case letter unless it starts with an underscore or string",
+      "async": true,
+      "ns": "string",
+      "name": "camelize",
+      "fn": "on.input.in = function() {\n  output({ out: underscore_string.camelize(data) });\n};\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "String",
+            "type": "string",
+            "async": true,
+            "required": true
+          }
+        },
+        "output": {
+          "out": {
+            "title": "String",
+            "type": "string"
+          }
+        }
+      },
+      "require": {
+        "underscore.string": "0.x.x"
+      },
+      "phrases": {
+        "active": "Capitalizing string"
+      },
+      "description": "Capitalize a string",
+      "async": true,
+      "ns": "string",
+      "name": "capitalize",
+      "fn": "on.input.in = function() {\n  output({ out: underscore_string.capitalize(data) });\n};\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "String",
+            "type": "string",
+            "async": true,
+            "required": true
+          }
+        },
+        "output": {
+          "out": {
+            "title": "String",
+            "type": "string"
+          }
+        }
+      },
+      "require": {
+        "underscore.string": "0.x.x"
+      },
+      "phrases": {
+        "active": "Converting to chars"
+      },
+      "description": "Return the chars within a string",
+      "async": true,
+      "ns": "string",
+      "name": "chars",
+      "fn": "on.input.in = function() {\n  output({ out: underscore_string.chars(data) });\n};\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "String",
+            "type": "string",
+            "async": true,
+            "required": true
+          },
+          "step": {
+            "title": "Step",
+            "type": "number",
+            "required": true
+          }
+        },
+        "output": {
+          "out": {
+            "title": "String",
+            "type": "string"
+          }
+        }
+      },
+      "require": {
+        "underscore.string": "0.x.x"
+      },
+      "phrases": {
+        "active": "Chopping string"
+      },
+      "description": "Chop a string in equal parts.",
+      "async": true,
+      "ns": "string",
+      "name": "chop",
+      "fn": "on.input.in = function() {\n  output({ out: underscore_string.chop(data, input.step) });\n};\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "String",
+            "type": "string",
+            "async": true,
+            "required": true
+          }
+        },
+        "output": {
+          "out": {
+            "title": "String",
+            "type": "string"
+          }
+        }
+      },
+      "require": {
+        "underscore.string": "0.x.x"
+      },
+      "phrases": {
+        "active": "Classifying string"
+      },
+      "description": "Converts string to camelized class name. First letter is always upper case",
+      "async": true,
+      "ns": "string",
+      "name": "classify",
+      "fn": "on.input.in = function() {\n  output({ out: underscore_string.classify(data) });\n};\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "String",
+            "type": "string",
+            "async": true,
+            "required": true
+          }
+        },
+        "output": {
+          "out": {
+            "title": "String",
+            "type": "string"
+          }
+        }
+      },
+      "require": {
+        "underscore.string": "0.x.x"
+      },
+      "phrases": {
+        "active": "Cleaning whitespace"
+      },
+      "description": "Compress to single whitespaces",
+      "async": true,
+      "ns": "string",
+      "name": "clean",
+      "fn": "on.input.in = function() {\n  output({ out: underscore_string.clean(data) });\n};\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
             "title": "String Parts",
             "type": "array",
             "required": true
@@ -62,6 +241,360 @@
       "ns": "string",
       "name": "concat",
       "fn": "output.out = input.string.concat.apply(null, input. in )\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "String",
+            "type": "string",
+            "async": true,
+            "required": true
+          },
+          "substring": {
+            "title": "Sub String",
+            "type": "string",
+            "required": true
+          }
+        },
+        "output": {
+          "out": {
+            "title": "String",
+            "type": "string"
+          }
+        }
+      },
+      "require": {
+        "underscore.string": "0.x.x"
+      },
+      "phrases": {
+        "active": "Capitalizing string"
+      },
+      "description": "Counts the number occurances of a string within another string",
+      "async": true,
+      "ns": "string",
+      "name": "count",
+      "fn": "on.input.in = function() {\n  output({ out: underscore_string.count(data, input.substring) });\n};\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "String",
+            "type": "string",
+            "async": true,
+            "required": true
+          }
+        },
+        "output": {
+          "out": {
+            "title": "String",
+            "type": "string"
+          }
+        }
+      },
+      "require": {
+        "underscore.string": "0.x.x"
+      },
+      "phrases": {
+        "active": "Dasherizing string"
+      },
+      "description": "Converts a underscored or camelized string into an dasherized one",
+      "async": true,
+      "ns": "string",
+      "name": "dasherize",
+      "fn": "on.input.in = function() {\n  output({ out: underscore_string.dasherize(data) });\n};\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "String",
+            "type": "string",
+            "async": true,
+            "required": true
+          },
+          "substring": {
+            "title": "Substring",
+            "type": "string",
+            "required": true
+          }
+        },
+        "output": {
+          "out": {
+            "title": "String",
+            "type": "string"
+          }
+        }
+      },
+      "require": {
+        "underscore.string": "0.x.x"
+      },
+      "phrases": {
+        "active": "Determining whether string ends with {{input.substring}}"
+      },
+      "description": "Checks whether a string ends with substring",
+      "async": true,
+      "ns": "string",
+      "name": "endsWith",
+      "fn": "on.input.in = function() {\n  output({ out: underscore_string.endsWith(data, input.substring) });\n};\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "String",
+            "type": "string",
+            "async": true,
+            "required": true
+          }
+        },
+        "output": {
+          "out": {
+            "title": "String",
+            "type": "string"
+          }
+        }
+      },
+      "require": {
+        "underscore.string": "0.x.x"
+      },
+      "phrases": {
+        "active": "Escaping HTML"
+      },
+      "description": "Converts HTML special characters to their entity equivalents",
+      "async": true,
+      "ns": "string",
+      "name": "escapeHTML",
+      "fn": "on.input.in = function() {\n  output({ out: underscore_string.escapeHTML(data) });\n};\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "String",
+            "type": "string",
+            "async": true,
+            "required": true
+          }
+        },
+        "output": {
+          "out": {
+            "title": "String",
+            "type": "string"
+          }
+        }
+      },
+      "require": {
+        "underscore.string": "0.x.x"
+      },
+      "phrases": {
+        "active": "Humanizing string"
+      },
+      "description": "Converts an underscored, camelized, or dasherized string into a humanized one. Also removes beginning and ending whitespace, and removes the postfix '_id'.",
+      "async": true,
+      "ns": "string",
+      "name": "humanize",
+      "fn": "on.input.in = function() {\n  output({ out: underscore_string.humanize(data) });\n};\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "String",
+            "type": "string",
+            "async": true,
+            "required": true
+          },
+          "include": {
+            "title": "Include",
+            "type": "string",
+            "required": true
+          }
+        },
+        "output": {
+          "out": {
+            "title": "String",
+            "type": "string"
+          }
+        }
+      },
+      "require": {
+        "underscore.string": "0.x.x"
+      },
+      "phrases": {
+        "active": "Determining string inclusion"
+      },
+      "description": "Indicates whether a string includes another string",
+      "async": true,
+      "ns": "string",
+      "name": "include",
+      "fn": "on.input.in = function() {\n  output({ out: underscore_string.include(data, input.include) });\n};\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "String",
+            "type": "string",
+            "async": true,
+            "required": true
+          }
+        },
+        "output": {
+          "out": {
+            "title": "String",
+            "type": "string"
+          }
+        }
+      },
+      "require": {
+        "underscore.string": "0.x.x"
+      },
+      "phrases": {
+        "active": "Capitalizing string"
+      },
+      "description": "Capitalize a string",
+      "async": true,
+      "ns": "string",
+      "name": "capitalize",
+      "fn": "on.input.in = function() {\n  output({ out: underscore_string.capitalize(data) });\n};\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "String",
+            "type": "string",
+            "async": true,
+            "required": true
+          }
+        },
+        "output": {
+          "out": {
+            "title": "String",
+            "type": "string"
+          }
+        }
+      },
+      "require": {
+        "underscore.string": "0.x.x"
+      },
+      "phrases": {
+        "active": "Checking for blank string"
+      },
+      "description": "Determines whether a string is blank (whitespace, new line, etc.)",
+      "async": true,
+      "ns": "string",
+      "name": "isBlank",
+      "fn": "on.input.in = function() {\n  output({ out: underscore_string.isBlank(data) });\n};\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "String",
+            "type": "string",
+            "async": true,
+            "required": true
+          },
+          "index": {
+            "title": "Index",
+            "type": "number",
+            "required": true
+          },
+          "substring": {
+            "title": "Substring",
+            "type": "string",
+            "required": true
+          }
+        },
+        "output": {
+          "out": {
+            "title": "Distance",
+            "type": "number"
+          }
+        }
+      },
+      "require": {
+        "underscore.string": "0.x.x"
+      },
+      "async": true,
+      "phrases": {
+        "active": "Inserting substring"
+      },
+      "description": "Inserts a substring at the index given",
+      "ns": "string",
+      "name": "insert",
+      "fn": "on.input.in = function() {\n  underscore_string.insert(data, input.index, input.substring);\n};\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "String",
+            "type": "string",
+            "async": true,
+            "required": true
+          }
+        },
+        "output": {
+          "out": {
+            "title": "String",
+            "type": "string"
+          }
+        }
+      },
+      "require": {
+        "underscore.string": "0.x.x"
+      },
+      "phrases": {
+        "active": "Splitting string into seperate lines"
+      },
+      "description": "Splits a string by line breaks",
+      "async": true,
+      "ns": "string",
+      "name": "lines",
+      "fn": "on.input.in = function() {\n  output({ out: underscore_string.lines(data) });\n};\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "String",
+            "type": "string",
+            "async": true,
+            "required": true
+          },
+          "length": {
+            "title": "Length",
+            "type": "number",
+            "required": true
+          },
+          "prune": {
+            "title": "Prune string",
+            "type": "string",
+            "default": "..."
+          }
+        },
+        "output": {
+          "out": {
+            "title": "String",
+            "type": "string"
+          }
+        }
+      },
+      "require": {
+        "underscore.string": "0.x.x"
+      },
+      "phrases": {
+        "active": "Pruning string to a length of {{input.length}}"
+      },
+      "description": "Elegant version of truncate. Makes sure the pruned string does not exceed the original length. Avoid half-chopped words when truncating.",
+      "async": true,
+      "ns": "string",
+      "name": "prune",
+      "fn": "on.input.in = function() {\n  output({ out: underscore_string.prune(data, input.length, input.prune) });\n};\n"
     },
     {
       "ports": {
@@ -138,6 +671,79 @@
           "in": {
             "title": "String",
             "type": "string",
+            "async": true,
+            "required": true
+          }
+        },
+        "output": {
+          "out": {
+            "title": "String",
+            "type": "string"
+          }
+        }
+      },
+      "require": {
+        "underscore.string": "0.x.x"
+      },
+      "phrases": {
+        "active": "Reversing string"
+      },
+      "description": "Reverses the string",
+      "async": true,
+      "ns": "string",
+      "name": "reverse",
+      "fn": "on.input.in = function() {\n  output({ out: underscore_string.reverse(data) });\n};\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "String",
+            "type": "string",
+            "async": true,
+            "required": true
+          },
+          "index": {
+            "title": "Index",
+            "type": "number",
+            "required": true
+          },
+          "length": {
+            "title": "Length",
+            "type": "number",
+            "required": true
+          },
+          "substring": {
+            "title": "Substring",
+            "type": "string",
+            "required": true
+          }
+        },
+        "output": {
+          "out": {
+            "title": "String",
+            "type": "string"
+          }
+        }
+      },
+      "require": {
+        "underscore.string": "0.x.x"
+      },
+      "phrases": {
+        "active": "Splicing string"
+      },
+      "description": "Replaces part of a string by index number and length",
+      "async": true,
+      "ns": "string",
+      "name": "splice",
+      "fn": "on.input.in = function() {\n  output({ out: underscore_string.splice(data, input.index, input.length, input.substring) });\n};\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "String",
+            "type": "string",
             "required": true
           },
           "seperator": {
@@ -176,6 +782,127 @@
             "type": "string",
             "async": true,
             "required": true
+          },
+          "substring": {
+            "title": "Substring",
+            "type": "string",
+            "required": true
+          }
+        },
+        "output": {
+          "out": {
+            "title": "String",
+            "type": "string"
+          }
+        }
+      },
+      "require": {
+        "underscore.string": "0.x.x"
+      },
+      "phrases": {
+        "active": "Determining whether string starts with {{input.substring}}"
+      },
+      "description": "Checks whether a string starts with substring",
+      "async": true,
+      "ns": "string",
+      "name": "startsWith",
+      "fn": "on.input.in = function() {\n  output({ out: underscore_string.startsWith(data, input.substring) });\n};\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "String",
+            "type": "string",
+            "async": true,
+            "required": true
+          }
+        },
+        "output": {
+          "out": {
+            "title": "String",
+            "type": "string"
+          }
+        }
+      },
+      "require": {
+        "underscore.string": "0.x.x"
+      },
+      "phrases": {
+        "active": "Getting successor"
+      },
+      "description": "Outputs the successor of this string",
+      "async": true,
+      "ns": "string",
+      "name": "succ",
+      "fn": "on.input.in = function() {\n  output({ out: underscore_string.succ(data) });\n};\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "String",
+            "type": "string",
+            "async": true,
+            "required": true
+          }
+        },
+        "output": {
+          "out": {
+            "title": "String",
+            "type": "string"
+          }
+        }
+      },
+      "require": {
+        "underscore.string": "0.x.x"
+      },
+      "phrases": {
+        "active": "Swapping case-based characters"
+      },
+      "description": "Swap the case of all case-based characters",
+      "async": true,
+      "ns": "string",
+      "name": "swapCase",
+      "fn": "on.input.in = function() {\n  output({ out: underscore_string.swapCase(data) });\n};\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "String",
+            "type": "string",
+            "async": true,
+            "required": true
+          }
+        },
+        "output": {
+          "out": {
+            "title": "String",
+            "type": "string"
+          }
+        }
+      },
+      "require": {
+        "underscore.string": "0.x.x"
+      },
+      "phrases": {
+        "active": "Titleizing string"
+      },
+      "description": "Titleize a string",
+      "async": true,
+      "ns": "string",
+      "name": "titleize",
+      "fn": "on.input.in = function() {\n  output({ out: underscore_string.titleize(data) });\n};\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "String",
+            "type": "string",
+            "async": true,
+            "required": true
           }
         },
         "output": {
@@ -193,6 +920,133 @@
       "ns": "string",
       "name": "toLowerCase",
       "fn": "on.input.in = function() {\n  output({ out: data.toLowerCase() });\n};\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "String",
+            "type": "string",
+            "async": true,
+            "required": true
+          },
+          "chars": {
+            "title": "Characters",
+            "type": "string",
+            "default": " ",
+            "required": true
+          }
+        },
+        "output": {
+          "out": {
+            "title": "String",
+            "type": "string"
+          }
+        }
+      },
+      "require": {
+        "underscore.string": "0.x.x"
+      },
+      "phrases": {
+        "active": "Trimming string"
+      },
+      "description": "trims defined characters from begining and ending of the string. Defaults to whitespace characters.",
+      "async": true,
+      "ns": "string",
+      "name": "trim",
+      "fn": "on.input.in = function() {\n  output({ out: underscore_string.trim(data, input.chars) });\n};\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "String",
+            "type": "string",
+            "async": true,
+            "required": true
+          },
+          "length": {
+            "title": "Length",
+            "type": "number",
+            "required": true
+          }
+        },
+        "output": {
+          "out": {
+            "title": "String",
+            "type": "string"
+          }
+        }
+      },
+      "require": {
+        "underscore.string": "0.x.x"
+      },
+      "phrases": {
+        "active": "Truncating string to a length of {{input.length}}"
+      },
+      "description": "Truncate a string to the length specified",
+      "async": true,
+      "ns": "string",
+      "name": "truncate",
+      "fn": "on.input.in = function() {\n  output({ out: underscore_string.truncate(data, input.length) });\n};\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "String",
+            "type": "string",
+            "async": true,
+            "required": true
+          }
+        },
+        "output": {
+          "out": {
+            "title": "String",
+            "type": "string"
+          }
+        }
+      },
+      "require": {
+        "underscore.string": "0.x.x"
+      },
+      "phrases": {
+        "active": "Underscoring string"
+      },
+      "description": "Converts a camelized or dasherized string into an underscored one",
+      "async": true,
+      "ns": "string",
+      "name": "underscored",
+      "fn": "on.input.in = function() {\n  output({ out: underscore_string.underscore(data) });\n};\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "String",
+            "type": "string",
+            "async": true,
+            "required": true
+          }
+        },
+        "output": {
+          "out": {
+            "title": "String",
+            "type": "string"
+          }
+        }
+      },
+      "require": {
+        "underscore.string": "0.x.x"
+      },
+      "phrases": {
+        "active": "Unescaping HTML"
+      },
+      "description": "Converts entity characters to HTML equivalents",
+      "async": true,
+      "ns": "string",
+      "name": "unescapeHTML",
+      "fn": "on.input.in = function() {\n  output({ out: underscore_string.unescapeHTML(data) });\n};\n"
     }
   ],
   "twigs": []

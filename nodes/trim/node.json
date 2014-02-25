@@ -1,0 +1,34 @@
+{
+  "name": "trim",
+  "ns": "string",
+  "async": true,
+  "description": "trims defined characters from begining and ending of the string. Defaults to whitespace characters.",
+  "phrases": {
+    "active": "Trimming string"
+  },
+  "require": {
+    "underscore.string": "0.x.x"
+  },
+  "ports": {
+    "input": {
+      "in": {
+        "title": "String",
+        "type": "string",
+        "async": true,
+        "required": true
+      },
+      "chars": {
+        "title": "Characters",
+        "type": "string",
+        "default": " ",
+        "required": true
+      }
+    },
+    "output": {
+      "out": {
+        "title": "String",
+        "type": "string"
+      }
+    }
+  }
+}
