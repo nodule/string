@@ -166,7 +166,33 @@
       "description": "Splits a String object into an array of strings by separating the string into substrings.",
       "ns": "string",
       "name": "split",
-      "fn": "output = function(cb) {\n\n  try {\n\n    if(input.regexp) {\n\n      var m = input.regexp.match(/^\\/(.*)\\/([gmi]*)/);\n      if(m.length === 3) {\n        cb({ out: input.in.split(new RegExp(m[1]), m[2]) });\n      } else {\n        cb({ error: ['RegExp not recognized:', input.regexp, 'required format: /..../gm' ].join(' ') });\n      }\n    } else if(input.seperator) {\n      cb({ out: input.in.split(input.seperator) });\n    } else {\n      cb({ out: [] });\n    }\n\n    done();\n\n  } catch(err) {\n    cb({ error: err });\n    done();\n  }\n\n};\n"
+      "fn": "output = function(cb) {\n\n  try {\n\n    if(input.regexp) {\n\n      var m = input.regexp.match(/^\\/(.*)\\/([gmi]*)/);\n      if(m.length === 3) {\n        var re = new RegExp(m[1], m[2]);\n        cb({ out: input.in.split(re) });\n      } else {\n        cb({ error: ['RegExp not recognized:', input.regexp, 'required format: /..../gm' ].join(' ') });\n      }\n    } else if(input.seperator) {\n      cb({ out: input.in.split(input.seperator) });\n    } else {\n      cb({ error: 'no input seperator or regexp' });\n    }\n\n    done();\n\n  } catch(err) {\n    cb({ error: err });\n    done();\n  }\n\n};\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "String",
+            "type": "string",
+            "async": true,
+            "required": true
+          }
+        },
+        "output": {
+          "out": {
+            "title": "String",
+            "type": "string"
+          }
+        }
+      },
+      "phrases": {
+        "active": "Lowercasing string"
+      },
+      "description": "Convert string to lowercase",
+      "async": true,
+      "ns": "string",
+      "name": "toLowerCase",
+      "fn": "on.input.in = function() {\n  output({ out: data.toLowerCase() });\n};\n"
     }
   ],
   "twigs": []
