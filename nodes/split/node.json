@@ -29,6 +29,10 @@
       "out": {
         "title": "String parts",
         "type": "array"
+      },
+      "error": {
+        "title": "Error",
+        "type": "object"
       }
     }
   }
