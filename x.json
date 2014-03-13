@@ -933,6 +933,32 @@
             "type": "string",
             "async": true,
             "required": true
+          }
+        },
+        "output": {
+          "out": {
+            "title": "String",
+            "type": "string"
+          }
+        }
+      },
+      "phrases": {
+        "active": "Uppercasing string"
+      },
+      "description": "Convert string to uppercase",
+      "async": true,
+      "ns": "string",
+      "name": "toUpperCase",
+      "fn": "on.input.in = function() {\n  output({ out: data.toUpperCase() });\n};\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "String",
+            "type": "string",
+            "async": true,
+            "required": true
           },
           "chars": {
             "title": "Characters",

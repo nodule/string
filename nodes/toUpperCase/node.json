@@ -1,0 +1,25 @@
+{
+  "name": "toUpperCase",
+  "ns": "string",
+  "async": true,
+  "description": "Convert string to uppercase",
+  "phrases": {
+    "active": "Uppercasing string"
+  },
+  "ports": {
+    "input": {
+      "in": {
+        "title": "String",
+        "type": "string",
+        "async": true,
+        "required": true
+      }
+    },
+    "output": {
+      "out": {
+        "title": "String",
+        "type": "string"
+      }
+    }
+  }
+}
