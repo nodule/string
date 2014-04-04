@@ -4,6 +4,8 @@ output = function(cb) {
   var res = input.in.match(r);
   if(res) {
     cb({ out: res });
+  } else {
+    cb({ error: new Error('Could not match: ' + input.regexp ) });
   }
 
 };
