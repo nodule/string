@@ -632,7 +632,7 @@
       "description": "Execute a regular expression",
       "ns": "string",
       "name": "regexp",
-      "fn": "output = function(cb) {\n\n  var r = new RegExp(input.regexp, input.flags);\n  var res = input.in.match(r);\n  if(res) {\n    cb({ out: res });\n  } else {\n    cb({ error: new Error('Could not match: ' + input.regexp ) });\n  }\n\n};\n"
+      "fn": "output = function(cb) {\n\n  var r = new RegExp(input.regexp, input.flags);\n  var res = input.in.match(r);\n  if(res) {\n    cb({ out: res });\n    done();\n  } else {\n    cb({ error: new Error('Could not match: ' + input.regexp ) });\n    done();\n  }\n\n};\n"
     },
     {
       "ports": {
