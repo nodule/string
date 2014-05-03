@@ -705,6 +705,35 @@
             "type": "string",
             "async": true,
             "required": true
+          }
+        },
+        "output": {
+          "out": {
+            "title": "String",
+            "type": "string"
+          }
+        }
+      },
+      "require": {
+        "underscore.string": "0.x.x"
+      },
+      "phrases": {
+        "active": "Slugifying string"
+      },
+      "description": "Transform text into a URL slug. Replaces whitespaces, accentuated, and special characters with a dash.",
+      "async": true,
+      "ns": "string",
+      "name": "slugify",
+      "fn": "on.input.in = function() {\n  output({ out: underscore_string.slugify(data) });\n};\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "String",
+            "type": "string",
+            "async": true,
+            "required": true
           },
           "index": {
             "title": "Index",

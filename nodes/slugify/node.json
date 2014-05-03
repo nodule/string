@@ -1,0 +1,28 @@
+{
+  "name": "slugify",
+  "ns": "string",
+  "async": true,
+  "description": "Transform text into a URL slug. Replaces whitespaces, accentuated, and special characters with a dash.",
+  "phrases": {
+    "active": "Slugifying string"
+  },
+  "require": {
+    "underscore.string": "0.x.x"
+  },
+  "ports": {
+    "input": {
+      "in": {
+        "title": "String",
+        "type": "string",
+        "async": true,
+        "required": true
+      }
+    },
+    "output": {
+      "out": {
+        "title": "String",
+        "type": "string"
+      }
+    }
+  }
+}
