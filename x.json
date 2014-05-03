@@ -57,7 +57,7 @@
         }
       },
       "require": {
-        "underscore.string": "0.x.x"
+        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Camelizing string"
@@ -86,7 +86,7 @@
         }
       },
       "require": {
-        "underscore.string": "0.x.x"
+        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Capitalizing string"
@@ -115,7 +115,7 @@
         }
       },
       "require": {
-        "underscore.string": "0.x.x"
+        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Converting to chars"
@@ -149,7 +149,7 @@
         }
       },
       "require": {
-        "underscore.string": "0.x.x"
+        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Chopping string"
@@ -178,7 +178,7 @@
         }
       },
       "require": {
-        "underscore.string": "0.x.x"
+        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Classifying string"
@@ -207,7 +207,7 @@
         }
       },
       "require": {
-        "underscore.string": "0.x.x"
+        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Cleaning whitespace"
@@ -265,7 +265,7 @@
         }
       },
       "require": {
-        "underscore.string": "0.x.x"
+        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Capitalizing string"
@@ -294,7 +294,7 @@
         }
       },
       "require": {
-        "underscore.string": "0.x.x"
+        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Dasherizing string"
@@ -328,7 +328,7 @@
         }
       },
       "require": {
-        "underscore.string": "0.x.x"
+        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Determining whether string ends with {{input.substring}}"
@@ -357,7 +357,7 @@
         }
       },
       "require": {
-        "underscore.string": "0.x.x"
+        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Escaping HTML"
@@ -386,7 +386,7 @@
         }
       },
       "require": {
-        "underscore.string": "0.x.x"
+        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Humanizing string"
@@ -420,7 +420,7 @@
         }
       },
       "require": {
-        "underscore.string": "0.x.x"
+        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Determining string inclusion"
@@ -449,7 +449,7 @@
         }
       },
       "require": {
-        "underscore.string": "0.x.x"
+        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Capitalizing string"
@@ -478,7 +478,7 @@
         }
       },
       "require": {
-        "underscore.string": "0.x.x"
+        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Checking for blank string"
@@ -517,7 +517,7 @@
         }
       },
       "require": {
-        "underscore.string": "0.x.x"
+        "underscore.string": "2.x.x"
       },
       "async": true,
       "phrases": {
@@ -546,7 +546,7 @@
         }
       },
       "require": {
-        "underscore.string": "0.x.x"
+        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Splitting string into seperate lines"
@@ -585,7 +585,7 @@
         }
       },
       "require": {
-        "underscore.string": "0.x.x"
+        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Pruning string to a length of {{input.length}}"
@@ -686,7 +686,7 @@
         }
       },
       "require": {
-        "underscore.string": "0.x.x"
+        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Reversing string"
@@ -715,7 +715,7 @@
         }
       },
       "require": {
-        "underscore.string": "0.x.x"
+        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Slugifying string"
@@ -759,7 +759,7 @@
         }
       },
       "require": {
-        "underscore.string": "0.x.x"
+        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Splicing string"
@@ -833,7 +833,7 @@
         }
       },
       "require": {
-        "underscore.string": "0.x.x"
+        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Determining whether string starts with {{input.substring}}"
@@ -862,7 +862,7 @@
         }
       },
       "require": {
-        "underscore.string": "0.x.x"
+        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Getting successor"
@@ -891,7 +891,7 @@
         }
       },
       "require": {
-        "underscore.string": "0.x.x"
+        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Swapping case-based characters"
@@ -920,7 +920,7 @@
         }
       },
       "require": {
-        "underscore.string": "0.x.x"
+        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Titleizing string"
@@ -1007,7 +1007,7 @@
         }
       },
       "require": {
-        "underscore.string": "0.x.x"
+        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Trimming string"
@@ -1041,7 +1041,7 @@
         }
       },
       "require": {
-        "underscore.string": "0.x.x"
+        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Truncating string to a length of {{input.length}}"
@@ -1070,7 +1070,7 @@
         }
       },
       "require": {
-        "underscore.string": "0.x.x"
+        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Underscoring string"
@@ -1099,7 +1099,7 @@
         }
       },
       "require": {
-        "underscore.string": "0.x.x"
+        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Unescaping HTML"

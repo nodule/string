@@ -7,7 +7,7 @@
     "active": "Underscoring string"
   },
   "require": {
-    "underscore.string": "0.x.x"
+    "underscore.string": "2.x.x"
   },
   "ports": {
     "input": {
