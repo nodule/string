@@ -1,36 +1,36 @@
 {
-  "name":"regexp",
-  "ns":"string",
-  "description":"Execute a regular expression",
+  "name": "regexp",
+  "ns": "string",
+  "description": "Execute a regular expression",
   "phrases": {
     "active": "RegExping {{input.regexp}} {{input.flags}}"
   },
-  "ports":{
-    "input":{
-      "in":{
-        "type":"string",
-        "title":"Data",
+  "ports": {
+    "input": {
+      "in": {
+        "type": "string",
+        "title": "Data",
         "required": true
       },
-      "regexp":{
-        "type":"string",
-        "title":"A Regular Expression",
+      "regexp": {
+        "type": "string",
+        "title": "A Regular Expression",
         "required": true
       },
-      "flags":{
-        "type":"string",
-        "title":"Flags",
+      "flags": {
+        "type": "string",
+        "title": "Flags",
         "default": "g"
       }
     },
-    "output":{
-      "out":{
-        "type":"array",
-        "title":"Results"
+    "output": {
+      "out": {
+        "type": "array",
+        "title": "Results"
       },
-      "error":{
-        "type":"object",
-        "title":"Error"
+      "error": {
+        "type": "object",
+        "title": "Error"
       }
     }
   }

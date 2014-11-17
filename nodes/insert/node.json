@@ -6,9 +6,6 @@
   "phrases": {
     "active": "Capitalizing string"
   },
-  "require": {
-    "underscore.string": "2.x.x"
-  },
   "ports": {
     "input": {
       "in": {
@@ -23,6 +20,11 @@
         "title": "String",
         "type": "string"
       }
+    }
+  },
+  "dependencies": {
+    "npm": {
+      "underscore.string": "2.x.x"
     }
   }
 }

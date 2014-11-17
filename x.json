@@ -40,6 +40,11 @@
       "fn": "output.out = input.in + input.append\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "underscore.string": "2.x.x"
+        }
+      },
       "ports": {
         "input": {
           "in": {
@@ -55,9 +60,6 @@
             "type": "string"
           }
         }
-      },
-      "require": {
-        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Camelizing string"
@@ -69,6 +71,11 @@
       "fn": "on.input.in = function() {\n  output({ out: underscore_string.camelize(data) });\n};\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "underscore.string": "2.x.x"
+        }
+      },
       "ports": {
         "input": {
           "in": {
@@ -84,9 +91,6 @@
             "type": "string"
           }
         }
-      },
-      "require": {
-        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Capitalizing string"
@@ -98,6 +102,11 @@
       "fn": "on.input.in = function() {\n  output({ out: underscore_string.capitalize(data) });\n};\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "underscore.string": "2.x.x"
+        }
+      },
       "ports": {
         "input": {
           "in": {
@@ -114,9 +123,6 @@
           }
         }
       },
-      "require": {
-        "underscore.string": "2.x.x"
-      },
       "phrases": {
         "active": "Converting to chars"
       },
@@ -127,6 +133,11 @@
       "fn": "on.input.in = function() {\n  output({ out: underscore_string.chars(data) });\n};\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "underscore.string": "2.x.x"
+        }
+      },
       "ports": {
         "input": {
           "in": {
@@ -148,9 +159,6 @@
           }
         }
       },
-      "require": {
-        "underscore.string": "2.x.x"
-      },
       "phrases": {
         "active": "Chopping string"
       },
@@ -161,6 +169,11 @@
       "fn": "on.input.in = function() {\n  output({ out: underscore_string.chop(data, input.step) });\n};\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "underscore.string": "2.x.x"
+        }
+      },
       "ports": {
         "input": {
           "in": {
@@ -176,9 +189,6 @@
             "type": "string"
           }
         }
-      },
-      "require": {
-        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Classifying string"
@@ -190,6 +200,11 @@
       "fn": "on.input.in = function() {\n  output({ out: underscore_string.classify(data) });\n};\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "underscore.string": "2.x.x"
+        }
+      },
       "ports": {
         "input": {
           "in": {
@@ -205,9 +220,6 @@
             "type": "string"
           }
         }
-      },
-      "require": {
-        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Cleaning whitespace"
@@ -243,6 +255,11 @@
       "fn": "output.out = input.string.concat.apply(null, input.in )\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "underscore.string": "2.x.x"
+        }
+      },
       "ports": {
         "input": {
           "in": {
@@ -264,9 +281,6 @@
           }
         }
       },
-      "require": {
-        "underscore.string": "2.x.x"
-      },
       "phrases": {
         "active": "Capitalizing string"
       },
@@ -277,6 +291,11 @@
       "fn": "on.input.in = function() {\n  output({ out: underscore_string.count(data, input.substring) });\n};\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "underscore.string": "2.x.x"
+        }
+      },
       "ports": {
         "input": {
           "in": {
@@ -293,9 +312,6 @@
           }
         }
       },
-      "require": {
-        "underscore.string": "2.x.x"
-      },
       "phrases": {
         "active": "Dasherizing string"
       },
@@ -306,6 +322,11 @@
       "fn": "on.input.in = function() {\n  output({ out: underscore_string.dasherize(data) });\n};\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "underscore.string": "2.x.x"
+        }
+      },
       "ports": {
         "input": {
           "in": {
@@ -327,9 +348,6 @@
           }
         }
       },
-      "require": {
-        "underscore.string": "2.x.x"
-      },
       "phrases": {
         "active": "Determining whether string ends with {{input.substring}}"
       },
@@ -340,6 +358,11 @@
       "fn": "on.input.in = function() {\n  output({ out: underscore_string.endsWith(data, input.substring) });\n};\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "underscore.string": "2.x.x"
+        }
+      },
       "ports": {
         "input": {
           "in": {
@@ -355,9 +378,6 @@
             "type": "string"
           }
         }
-      },
-      "require": {
-        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Escaping HTML"
@@ -369,6 +389,11 @@
       "fn": "on.input.in = function() {\n  output({ out: underscore_string.escapeHTML(data) });\n};\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "underscore.string": "2.x.x"
+        }
+      },
       "ports": {
         "input": {
           "in": {
@@ -385,9 +410,6 @@
           }
         }
       },
-      "require": {
-        "underscore.string": "2.x.x"
-      },
       "phrases": {
         "active": "Humanizing string"
       },
@@ -398,6 +420,11 @@
       "fn": "on.input.in = function() {\n  output({ out: underscore_string.humanize(data) });\n};\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "underscore.string": "2.x.x"
+        }
+      },
       "ports": {
         "input": {
           "in": {
@@ -419,9 +446,6 @@
           }
         }
       },
-      "require": {
-        "underscore.string": "2.x.x"
-      },
       "phrases": {
         "active": "Determining string inclusion"
       },
@@ -432,6 +456,11 @@
       "fn": "on.input.in = function() {\n  output({ out: underscore_string.include(data, input.include) });\n};\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "underscore.string": "2.x.x"
+        }
+      },
       "ports": {
         "input": {
           "in": {
@@ -447,9 +476,6 @@
             "type": "string"
           }
         }
-      },
-      "require": {
-        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Capitalizing string"
@@ -461,6 +487,11 @@
       "fn": "on.input.in = function() {\n  output({ out: underscore_string.capitalize(data) });\n};\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "underscore.string": "2.x.x"
+        }
+      },
       "ports": {
         "input": {
           "in": {
@@ -477,9 +508,6 @@
           }
         }
       },
-      "require": {
-        "underscore.string": "2.x.x"
-      },
       "phrases": {
         "active": "Checking for blank string"
       },
@@ -490,6 +518,11 @@
       "fn": "on.input.in = function() {\n  output({ out: underscore_string.isBlank(data) });\n};\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "underscore.string": "2.x.x"
+        }
+      },
       "ports": {
         "input": {
           "in": {
@@ -516,9 +549,6 @@
           }
         }
       },
-      "require": {
-        "underscore.string": "2.x.x"
-      },
       "async": true,
       "phrases": {
         "active": "Inserting substring"
@@ -529,6 +559,11 @@
       "fn": "on.input.in = function() {\n  underscore_string.insert(data, input.index, input.substring);\n};\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "underscore.string": "2.x.x"
+        }
+      },
       "ports": {
         "input": {
           "in": {
@@ -545,9 +580,6 @@
           }
         }
       },
-      "require": {
-        "underscore.string": "2.x.x"
-      },
       "phrases": {
         "active": "Splitting string into seperate lines"
       },
@@ -558,6 +590,11 @@
       "fn": "on.input.in = function() {\n  output({ out: underscore_string.lines(data) });\n};\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "underscore.string": "2.x.x"
+        }
+      },
       "ports": {
         "input": {
           "in": {
@@ -583,9 +620,6 @@
             "type": "string"
           }
         }
-      },
-      "require": {
-        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Pruning string to a length of {{input.length}}"
@@ -669,6 +703,11 @@
       "fn": "var r = new RegExp(input.match, 'g');\noutput.out = input.in.replace(r, input.replace)\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "underscore.string": "2.x.x"
+        }
+      },
       "ports": {
         "input": {
           "in": {
@@ -684,9 +723,6 @@
             "type": "string"
           }
         }
-      },
-      "require": {
-        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Reversing string"
@@ -698,6 +734,11 @@
       "fn": "on.input.in = function() {\n  output({ out: underscore_string.reverse(data) });\n};\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "underscore.string": "2.x.x"
+        }
+      },
       "ports": {
         "input": {
           "in": {
@@ -714,9 +755,6 @@
           }
         }
       },
-      "require": {
-        "underscore.string": "2.x.x"
-      },
       "phrases": {
         "active": "Slugifying string"
       },
@@ -727,6 +765,11 @@
       "fn": "on.input.in = function() {\n  output({ out: underscore_string.slugify(data) });\n};\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "underscore.string": "2.x.x"
+        }
+      },
       "ports": {
         "input": {
           "in": {
@@ -757,9 +800,6 @@
             "type": "string"
           }
         }
-      },
-      "require": {
-        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Splicing string"
@@ -811,6 +851,11 @@
       "fn": "output = function(cb) {\n\n  try {\n\n    if(input.regexp) {\n\n      var m = input.regexp.match(/^\\/(.*)\\/([gmi]*)/);\n      if(m.length === 3) {\n        var re = new RegExp(m[1], m[2]);\n        cb({ out: input.in.split(re) });\n      } else {\n        cb({ error: ['RegExp not recognized:', input.regexp, 'required format: /..../gm' ].join(' ') });\n      }\n    } else if(input.seperator) {\n      cb({ out: input.in.split(input.seperator) });\n    } else {\n      cb({ error: 'no input seperator or regexp' });\n    }\n\n    done();\n\n  } catch(err) {\n    cb({ error: err });\n    done();\n  }\n\n};\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "underscore.string": "2.x.x"
+        }
+      },
       "ports": {
         "input": {
           "in": {
@@ -832,9 +877,6 @@
           }
         }
       },
-      "require": {
-        "underscore.string": "2.x.x"
-      },
       "phrases": {
         "active": "Determining whether string starts with {{input.substring}}"
       },
@@ -845,6 +887,11 @@
       "fn": "on.input.in = function() {\n  output({ out: underscore_string.startsWith(data, input.substring) });\n};\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "underscore.string": "2.x.x"
+        }
+      },
       "ports": {
         "input": {
           "in": {
@@ -860,9 +907,6 @@
             "type": "string"
           }
         }
-      },
-      "require": {
-        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Getting successor"
@@ -874,6 +918,11 @@
       "fn": "on.input.in = function() {\n  output({ out: underscore_string.succ(data) });\n};\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "underscore.string": "2.x.x"
+        }
+      },
       "ports": {
         "input": {
           "in": {
@@ -889,9 +938,6 @@
             "type": "string"
           }
         }
-      },
-      "require": {
-        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Swapping case-based characters"
@@ -903,6 +949,11 @@
       "fn": "on.input.in = function() {\n  output({ out: underscore_string.swapCase(data) });\n};\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "underscore.string": "2.x.x"
+        }
+      },
       "ports": {
         "input": {
           "in": {
@@ -918,9 +969,6 @@
             "type": "string"
           }
         }
-      },
-      "require": {
-        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Titleizing string"
@@ -984,6 +1032,11 @@
       "fn": "on.input.in = function() {\n  output({ out: data.toUpperCase() });\n};\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "underscore.string": "2.x.x"
+        }
+      },
       "ports": {
         "input": {
           "in": {
@@ -1006,9 +1059,6 @@
           }
         }
       },
-      "require": {
-        "underscore.string": "2.x.x"
-      },
       "phrases": {
         "active": "Trimming string"
       },
@@ -1019,6 +1069,11 @@
       "fn": "on.input.in = function() {\n  output({ out: underscore_string.trim(data, input.chars) });\n};\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "underscore.string": "2.x.x"
+        }
+      },
       "ports": {
         "input": {
           "in": {
@@ -1040,9 +1095,6 @@
           }
         }
       },
-      "require": {
-        "underscore.string": "2.x.x"
-      },
       "phrases": {
         "active": "Truncating string to a length of {{input.length}}"
       },
@@ -1053,6 +1105,11 @@
       "fn": "on.input.in = function() {\n  output({ out: underscore_string.truncate(data, input.length) });\n};\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "underscore.string": "2.x.x"
+        }
+      },
       "ports": {
         "input": {
           "in": {
@@ -1068,9 +1125,6 @@
             "type": "string"
           }
         }
-      },
-      "require": {
-        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Underscoring string"
@@ -1082,6 +1136,11 @@
       "fn": "on.input.in = function() {\n  output({ out: underscore_string.underscore(data) });\n};\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "underscore.string": "2.x.x"
+        }
+      },
       "ports": {
         "input": {
           "in": {
@@ -1097,9 +1156,6 @@
             "type": "string"
           }
         }
-      },
-      "require": {
-        "underscore.string": "2.x.x"
       },
       "phrases": {
         "active": "Unescaping HTML"

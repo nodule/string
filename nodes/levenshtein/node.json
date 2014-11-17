@@ -6,9 +6,6 @@
     "active": "Inserting substring"
   },
   "async": true,
-  "require": {
-    "underscore.string": "2.x.x"
-  },
   "ports": {
     "input": {
       "in": {
@@ -33,6 +30,11 @@
         "title": "Distance",
         "type": "number"
       }
+    }
+  },
+  "dependencies": {
+    "npm": {
+      "underscore.string": "2.x.x"
     }
   }
 }
