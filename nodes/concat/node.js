@@ -1,1 +1,3 @@
-output.out = input.string.concat.apply(null, input.in )
+on.input.in = function() {
+  output({out: String.prototype.concat.apply(input.in)});
+};

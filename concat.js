@@ -2,6 +2,7 @@ module.exports = {
   name: "concat",
   ns: "string",
   description: "Combines the text of two or more strings and returns a new string.",
+  async: true,
   phrases: {
     active: "Concatenating string"
   },
@@ -10,7 +11,18 @@ module.exports = {
       "in": {
         title: "String Parts",
         type: "array",
-        required: true
+        async: true,
+        fn: function __IN__(data, x, source, state, input, output) {
+          var r = function() {
+            output({
+              out: String.prototype.concat.apply(input.in)
+            });
+          }.call(this);
+          return {
+            state: state,
+            return: r
+          };
+        }
       }
     },
     output: {
@@ -20,15 +32,5 @@ module.exports = {
       }
     }
   },
-  fn: function concat(input, output, state, done, cb, on) {
-    var r = function() {
-      output.out = input.string.concat.apply(null, input.in)
-    }.call(this);
-    return {
-      output: output,
-      state: state,
-      on: on,
-      return: r
-    };
-  }
+  state: {}
 }

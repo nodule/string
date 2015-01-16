@@ -2,6 +2,7 @@
   "name": "concat",
   "ns": "string",
   "description": "Combines the text of two or more strings and returns a new string.",
+  "async": true,
   "phrases": {
     "active": "Concatenating string"
   },
@@ -10,7 +11,7 @@
       "in": {
         "title": "String Parts",
         "type": "array",
-        "required": true
+        "async": true
       }
     },
     "output": {

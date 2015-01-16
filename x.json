@@ -236,7 +236,7 @@
           "in": {
             "title": "String Parts",
             "type": "array",
-            "required": true
+            "async": true
           }
         },
         "output": {
@@ -249,10 +249,11 @@
       "phrases": {
         "active": "Concatenating string"
       },
+      "async": true,
       "description": "Combines the text of two or more strings and returns a new string.",
       "ns": "string",
       "name": "concat",
-      "fn": "output.out = input.string.concat.apply(null, input.in )\n"
+      "fn": "on.input.in = function() {\n  output({out: String.prototype.concat.apply(input.in)});\n};\n"
     },
     {
       "dependencies": {
