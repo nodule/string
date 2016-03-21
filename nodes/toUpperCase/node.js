@@ -1,3 +1,3 @@
 on.input.in = function() {
-  output({ out: input.in.toUpperCase() });
+  output({ out: $.in.toUpperCase() });
 };

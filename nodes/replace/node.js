@@ -1,2 +1,2 @@
-var r = new RegExp(input.match, 'g');
-output.out = input.in.replace(r, input.replace)
+var r = new RegExp($.match, 'g');
+output.out = $.in.replace(r, $.replace)

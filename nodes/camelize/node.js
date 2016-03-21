@@ -1,3 +1,3 @@
 on.input.in = function() {
-  output({ out: underscore_string.camelize(input.in) });
+  output({ out: underscore_string.camelize($.in) });
 };

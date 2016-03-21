@@ -1,1 +1,1 @@
-output.out = input.in + input.append
+output.out = $.in + $.append
