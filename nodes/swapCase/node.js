@@ -1,3 +1,3 @@
 on.input.in = function() {
-  output({ out: underscore_string.swapCase(data) });
+  output({ out: underscore_string.swapCase(input.in) });
 };

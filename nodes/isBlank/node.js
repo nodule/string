@@ -1,3 +1,3 @@
 on.input.in = function() {
-  output({ out: underscore_string.isBlank(data) });
+  output({ out: underscore_string.isBlank(input.in) });
 };

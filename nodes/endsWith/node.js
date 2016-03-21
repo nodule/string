@@ -1,3 +1,3 @@
 on.input.in = function() {
-  output({ out: underscore_string.endsWith(data, input.substring) });
+  output({ out: underscore_string.endsWith(input.in, input.substring) });
 };

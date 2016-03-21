@@ -1,3 +1,3 @@
 on.input.in = function() {
-  underscore_string.insert(data, input.index, input.substring);
+  underscore_string.insert(input.in, input.index, input.substring);
 };

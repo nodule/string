@@ -1,3 +1,3 @@
 on.input.in = function() {
-  output({ out: underscore_string.trim(data, input.chars) });
+  output({ out: underscore_string.trim(input.in, input.chars) });
 };

@@ -1,3 +1,3 @@
 on.input.in = function() {
-  output({ out: underscore_string.chop(data, input.step) });
+  output({ out: underscore_string.chop(input.in, input.step) });
 };

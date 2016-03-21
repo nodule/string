@@ -1,3 +1,3 @@
 on.input.in = function() {
-  output({ out: underscore_string.escapeHTML(data) });
+  output({ out: underscore_string.escapeHTML(input.in) });
 };

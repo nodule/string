@@ -1,3 +1,3 @@
 on.input.in = function() {
-  output({ out: underscore_string.slugify(data) });
+  output({ out: underscore_string.slugify(input.in) });
 };

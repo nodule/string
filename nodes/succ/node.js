@@ -1,3 +1,3 @@
 on.input.in = function() {
-  output({ out: underscore_string.succ(data) });
+  output({ out: underscore_string.succ(input.in) });
 };
