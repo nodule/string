@@ -1,3 +1,3 @@
 on.input.in = function() {
-  output({ out: underscore_string.include($.in, $.include) });
+  output({ out: $.write('in', underscore_string.include($.in, $.include)) });
 };

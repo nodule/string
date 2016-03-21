@@ -1,1 +1,1 @@
-output.out = $.in + $.append
+output.out = $.create($.in + $.append)

@@ -1,2 +1,2 @@
 var r = new RegExp($.match, 'g');
-output.out = $.in.replace(r, $.replace)
+output.out = $.write('in', $.in.replace(r, $.replace))

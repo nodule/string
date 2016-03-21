@@ -1,3 +1,3 @@
 on.input.in = function() {
-  output({ out: underscore_string.reverse($.in) });
+  output({ out: $.write('in', underscore_string.reverse($.in)) });
 };

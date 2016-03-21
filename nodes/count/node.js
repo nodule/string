@@ -1,3 +1,3 @@
 on.input.in = function() {
-  output({ out: underscore_string.count($.in, $.substring) });
+  output({ out: $.write('in', underscore_string.count($.in, $.substring)) });
 };
