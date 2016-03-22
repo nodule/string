@@ -25,9 +25,9 @@ module.exports = {
       }
     }
   },
-  fn: function append(input, output, state, done, cb, on) {
+  fn: function append(input, $, output, state, done, cb, on) {
     var r = function() {
-      output.out = input.in + input.append
+      output.out = $.create($.in + $.append)
     }.call(this);
     return {
       output: output,

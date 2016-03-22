@@ -34,18 +34,18 @@ module.exports = {
       }
     }
   },
-  fn: function regexp(input, output, state, done, cb, on) {
+  fn: function regexp(input, $, output, state, done, cb, on) {
     var r = function() {
-      var r = new RegExp(input.regexp, input.flags);
-      var res = input.in.match(r);
+      var r = new RegExp($.regexp, $.flags);
+      var res = $.in.match(r);
       if (res) {
         output({
-          out: res
+          out: $.create(res)
         });
         done();
       } else {
         output({
-          error: new Error('Could not match: ' + input.regexp)
+          error: $.create(new Error('Could not match: ' + $.regexp))
         });
         done();
       }

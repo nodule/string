@@ -30,10 +30,10 @@ module.exports = {
       }
     }
   },
-  fn: function replace(input, output, state, done, cb, on) {
+  fn: function replace(input, $, output, state, done, cb, on) {
     var r = function() {
-      var r = new RegExp(input.match, 'g');
-      output.out = input.in.replace(r, input.replace)
+      var r = new RegExp($.match, 'g');
+      output.out = $.write('in', $.in.replace(r, $.replace))
     }.call(this);
     return {
       output: output,

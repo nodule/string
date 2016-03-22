@@ -37,7 +37,7 @@
       "description": "Appends a string to an other string",
       "ns": "string",
       "name": "append",
-      "fn": "output.out = input.in + input.append\n"
+      "fn": "output.out = $.create($.in + $.append)\n"
     },
     {
       "dependencies": {
@@ -68,7 +68,7 @@
       "async": true,
       "ns": "string",
       "name": "camelize",
-      "fn": "on.input.in = function() {\n  output({ out: underscore_string.camelize(data) });\n};\n"
+      "fn": "on.input.in = function() {\n  output({ out: $.write('in', underscore_string.camelize($.in)) });\n};\n"
     },
     {
       "dependencies": {
@@ -99,7 +99,7 @@
       "async": true,
       "ns": "string",
       "name": "capitalize",
-      "fn": "on.input.in = function() {\n  output({ out: underscore_string.capitalize(data) });\n};\n"
+      "fn": "on.input.in = function() {\n  output({ out: $.write('in', underscore_string.capitalize($.in)) });\n};\n"
     },
     {
       "dependencies": {
@@ -130,7 +130,7 @@
       "async": true,
       "ns": "string",
       "name": "chars",
-      "fn": "on.input.in = function() {\n  output({ out: underscore_string.chars(data) });\n};\n"
+      "fn": "on.input.in = function() {\n  output({ out: $.write('in', underscore_string.chars($.in)) });\n};\n"
     },
     {
       "dependencies": {
@@ -166,7 +166,7 @@
       "async": true,
       "ns": "string",
       "name": "chop",
-      "fn": "on.input.in = function() {\n  output({ out: underscore_string.chop(data, input.step) });\n};\n"
+      "fn": "on.input.in = function() {\n  output({ out: $.write('in', underscore_string.chop($.in, $.step)) });\n};\n"
     },
     {
       "dependencies": {
@@ -197,7 +197,7 @@
       "async": true,
       "ns": "string",
       "name": "classify",
-      "fn": "on.input.in = function() {\n  output({ out: underscore_string.classify(data) });\n};\n"
+      "fn": "on.input.in = function() {\n  output({ out: $.write('in', underscore_string.classify($.in)) });\n};\n"
     },
     {
       "dependencies": {
@@ -228,7 +228,7 @@
       "async": true,
       "ns": "string",
       "name": "clean",
-      "fn": "on.input.in = function() {\n  output({ out: underscore_string.clean(data) });\n};\n"
+      "fn": "on.input.in = function() {\n  output({ out: $.write('in', underscore_string.clean($.in)) });\n};\n"
     },
     {
       "ports": {
@@ -251,7 +251,7 @@
       "description": "Combines the text of two or more strings and returns a new string.",
       "ns": "string",
       "name": "concat",
-      "fn": "output.out = String.prototype.concat.apply(input.in);\n"
+      "fn": "output.out = $.write('in', String.prototype.concat.apply($.in));\n"
     },
     {
       "dependencies": {
@@ -287,7 +287,7 @@
       "async": true,
       "ns": "string",
       "name": "count",
-      "fn": "on.input.in = function() {\n  output({ out: underscore_string.count(data, input.substring) });\n};\n"
+      "fn": "on.input.in = function() {\n  output({ out: $.write('in', underscore_string.count($.in, $.substring)) });\n};\n"
     },
     {
       "dependencies": {
@@ -318,7 +318,7 @@
       "async": true,
       "ns": "string",
       "name": "dasherize",
-      "fn": "on.input.in = function() {\n  output({ out: underscore_string.dasherize(data) });\n};\n"
+      "fn": "on.input.in = function() {\n  output({ out: $.write('in', underscore_string.dasherize($.in)) });\n};\n"
     },
     {
       "dependencies": {
@@ -354,7 +354,7 @@
       "async": true,
       "ns": "string",
       "name": "endsWith",
-      "fn": "on.input.in = function() {\n  output({ out: underscore_string.endsWith(data, input.substring) });\n};\n"
+      "fn": "on.input.in = function() {\n  output({ out: $.write('in', underscore_string.endsWith($.in, $.substring)) });\n};\n"
     },
     {
       "dependencies": {
@@ -385,7 +385,7 @@
       "async": true,
       "ns": "string",
       "name": "escapeHTML",
-      "fn": "on.input.in = function() {\n  output({ out: underscore_string.escapeHTML(data) });\n};\n"
+      "fn": "on.input.in = function() {\n  output({ out: $.write('in', underscore_string.escapeHTML($.in)) });\n};\n"
     },
     {
       "dependencies": {
@@ -416,7 +416,7 @@
       "async": true,
       "ns": "string",
       "name": "humanize",
-      "fn": "on.input.in = function() {\n  output({ out: underscore_string.humanize(data) });\n};\n"
+      "fn": "on.input.in = function() {\n  output({ out: $.write('in', underscore_string.humanize($.in)) });\n};\n"
     },
     {
       "dependencies": {
@@ -452,7 +452,7 @@
       "async": true,
       "ns": "string",
       "name": "include",
-      "fn": "on.input.in = function() {\n  output({ out: underscore_string.include(data, input.include) });\n};\n"
+      "fn": "on.input.in = function() {\n  output({ out: $.write('in', underscore_string.include($.in, $.include)) });\n};\n"
     },
     {
       "dependencies": {
@@ -483,7 +483,7 @@
       "async": true,
       "ns": "string",
       "name": "capitalize",
-      "fn": "on.input.in = function() {\n  output({ out: underscore_string.capitalize(data) });\n};\n"
+      "fn": "on.input.in = function() {\n  output({ out: $.write('in', underscore_string.capitalize($.in)) });\n};\n"
     },
     {
       "dependencies": {
@@ -514,7 +514,7 @@
       "async": true,
       "ns": "string",
       "name": "isBlank",
-      "fn": "on.input.in = function() {\n  output({ out: underscore_string.isBlank(data) });\n};\n"
+      "fn": "on.input.in = function() {\n  output({ out: $.write('in', underscore_string.isBlank($.in)) });\n};\n"
     },
     {
       "dependencies": {
@@ -555,7 +555,7 @@
       "description": "Inserts a substring at the index given",
       "ns": "string",
       "name": "insert",
-      "fn": "on.input.in = function() {\n  underscore_string.insert(data, input.index, input.substring);\n};\n"
+      "fn": "on.input.in = function() {\n  output({out: $.write('in', underscore_string.insert($.in, $.index, $.substring))});\n};\n"
     },
     {
       "dependencies": {
@@ -586,7 +586,7 @@
       "async": true,
       "ns": "string",
       "name": "lines",
-      "fn": "on.input.in = function() {\n  output({ out: underscore_string.lines(data) });\n};\n"
+      "fn": "on.input.in = function() {\n  output({ out: $.write('in', underscore_string.lines($.in)) });\n};\n"
     },
     {
       "dependencies": {
@@ -627,7 +627,7 @@
       "async": true,
       "ns": "string",
       "name": "prune",
-      "fn": "on.input.in = function() {\n  output({ out: underscore_string.prune(data, input.length, input.prune) });\n};\n"
+      "fn": "on.input.in = function() {\n  output({ out: $.write('in', underscore_string.prune($.in, $.length, $.prune)) });\n};\n"
     },
     {
       "ports": {
@@ -665,7 +665,7 @@
       "description": "Execute a regular expression",
       "ns": "string",
       "name": "regexp",
-      "fn": "output = function(cb) {\n\n  var r = new RegExp(input.regexp, input.flags);\n  var res = input.in.match(r);\n  if(res) {\n    cb({ out: res });\n    done();\n  } else {\n    cb({ error: new Error('Could not match: ' + input.regexp ) });\n    done();\n  }\n\n};\n"
+      "fn": "output = function(cb) {\n  var r = new RegExp($.regexp, $.flags);\n  var res = $.in.match(r);\n  if(res) {\n    cb({ out: $.create(res) });\n    done();\n  } else {\n    cb({ error: $.create(new Error('Could not match: ' + $.regexp )) });\n    done();\n  }\n};\n"
     },
     {
       "ports": {
@@ -699,7 +699,7 @@
       "description": "Replaces a string within another string",
       "ns": "string",
       "name": "replace",
-      "fn": "var r = new RegExp(input.match, 'g');\noutput.out = input.in.replace(r, input.replace)\n"
+      "fn": "var r = new RegExp($.match, 'g');\noutput.out = $.write('in', $.in.replace(r, $.replace))\n"
     },
     {
       "dependencies": {
@@ -730,7 +730,7 @@
       "async": true,
       "ns": "string",
       "name": "reverse",
-      "fn": "on.input.in = function() {\n  output({ out: underscore_string.reverse(data) });\n};\n"
+      "fn": "on.input.in = function() {\n  output({ out: $.write('in', underscore_string.reverse($.in)) });\n};\n"
     },
     {
       "dependencies": {
@@ -761,7 +761,7 @@
       "async": true,
       "ns": "string",
       "name": "slugify",
-      "fn": "on.input.in = function() {\n  output({ out: underscore_string.slugify(data) });\n};\n"
+      "fn": "on.input.in = function() {\n  output({ out: $.write('in', underscore_string.slugify($.in)) });\n};\n"
     },
     {
       "dependencies": {
@@ -807,7 +807,7 @@
       "async": true,
       "ns": "string",
       "name": "splice",
-      "fn": "on.input.in = function() {\n  output({ out: underscore_string.splice(data, input.index, input.length, input.substring) });\n};\n"
+      "fn": "on.input.in = function() {\n  output({ out: $.write('in', underscore_string.splice($.in, $.index, $.length, $.substring)) });\n};\n"
     },
     {
       "ports": {
@@ -847,7 +847,7 @@
       "description": "Splits a String object into an array of strings by separating the string into substrings.",
       "ns": "string",
       "name": "split",
-      "fn": "output = function(cb) {\n\n  try {\n\n    if(input.regexp) {\n\n      var m = input.regexp.match(/^\\/(.*)\\/([gmi]*)/);\n      if(m.length === 3) {\n        var re = new RegExp(m[1], m[2]);\n        cb({ out: input.in.split(re) });\n      } else {\n        cb({ error: ['RegExp not recognized:', input.regexp, 'required format: /..../gm' ].join(' ') });\n      }\n    } else if(input.seperator) {\n      cb({ out: input.in.split(input.seperator) });\n    } else {\n      cb({ error: 'no input seperator or regexp' });\n    }\n\n    done();\n\n  } catch(err) {\n    cb({ error: err });\n    done();\n  }\n\n};\n"
+      "fn": "output = function(cb) {\n  try {\n    if($.regexp) {\n      var m = $.regexp.match(/^\\/(.*)\\/([gmi]*)/);\n      if(m.length === 3) {\n        var re = new RegExp(m[1], m[2]);\n        cb({ out: $.write('in', $.in.split(re)) });\n      } else {\n        cb({ error: $.create(new Error(['RegExp not recognized:', $.regexp, 'required format: /..../gm' ].join(' '))) });\n      }\n    } else if($.seperator) {\n      cb({ out: $.write('in', $.in.split($.seperator)) });\n    } else {\n      cb({ error: $.create(Error('no input seperator or regexp')) });\n    }\n\n    done();\n\n  } catch(err) {\n    cb({ error: $.create(err) });\n    done();\n  }\n\n};\n"
     },
     {
       "dependencies": {
@@ -883,7 +883,7 @@
       "async": true,
       "ns": "string",
       "name": "startsWith",
-      "fn": "on.input.in = function() {\n  output({ out: underscore_string.startsWith(data, input.substring) });\n};\n"
+      "fn": "on.input.in = function() {\n  output({ out: $.write('in', underscore_string.startsWith($.in, $.substring)) });\n};\n"
     },
     {
       "dependencies": {
@@ -914,7 +914,7 @@
       "async": true,
       "ns": "string",
       "name": "succ",
-      "fn": "on.input.in = function() {\n  output({ out: underscore_string.succ(data) });\n};\n"
+      "fn": "on.input.in = function() {\n  output({ out: $.write('in', underscore_string.succ($.in)) });\n};\n"
     },
     {
       "dependencies": {
@@ -945,7 +945,7 @@
       "async": true,
       "ns": "string",
       "name": "swapCase",
-      "fn": "on.input.in = function() {\n  output({ out: underscore_string.swapCase(data) });\n};\n"
+      "fn": "on.input.in = function() {\n  output({ out: $.write('in', underscore_string.swapCase($.in)) });\n};\n"
     },
     {
       "dependencies": {
@@ -976,7 +976,7 @@
       "async": true,
       "ns": "string",
       "name": "titleize",
-      "fn": "on.input.in = function() {\n  output({ out: underscore_string.titleize(data) });\n};\n"
+      "fn": "on.input.in = function() {\n  output({ out: $.write('in', underscore_string.titleize($.in)) });\n};\n"
     },
     {
       "ports": {
@@ -1002,7 +1002,7 @@
       "async": true,
       "ns": "string",
       "name": "toLowerCase",
-      "fn": "on.input.in = function() {\n  output({ out: data.toLowerCase() });\n};\n"
+      "fn": "on.input.in = function() {\n  output({ out: $.write('in', $.in.toLowerCase()) });\n};\n"
     },
     {
       "ports": {
@@ -1028,7 +1028,7 @@
       "async": true,
       "ns": "string",
       "name": "toUpperCase",
-      "fn": "on.input.in = function() {\n  output({ out: data.toUpperCase() });\n};\n"
+      "fn": "on.input.in = function() {\n  output({ out: $.write('in', $.in.toUpperCase()) });\n};\n"
     },
     {
       "dependencies": {
@@ -1065,7 +1065,7 @@
       "async": true,
       "ns": "string",
       "name": "trim",
-      "fn": "on.input.in = function() {\n  output({ out: underscore_string.trim(data, input.chars) });\n};\n"
+      "fn": "on.input.in = function() {\n  output({ out: $.write('in', underscore_string.trim($.in, $.chars)) });\n};\n"
     },
     {
       "dependencies": {
@@ -1101,7 +1101,7 @@
       "async": true,
       "ns": "string",
       "name": "truncate",
-      "fn": "on.input.in = function() {\n  output({ out: underscore_string.truncate(data, input.length) });\n};\n"
+      "fn": "on.input.in = function() {\n  output({ out: $.write('in', underscore_string.truncate($.in, $.length)) });\n};\n"
     },
     {
       "dependencies": {
@@ -1132,7 +1132,7 @@
       "async": true,
       "ns": "string",
       "name": "underscored",
-      "fn": "on.input.in = function() {\n  output({ out: underscore_string.underscore(data) });\n};\n"
+      "fn": "on.input.in = function() {\n  output({ out: $.write('in', underscore_string.underscore($.in)) });\n};\n"
     },
     {
       "dependencies": {
@@ -1163,7 +1163,7 @@
       "async": true,
       "ns": "string",
       "name": "unescapeHTML",
-      "fn": "on.input.in = function() {\n  output({ out: underscore_string.unescapeHTML(data) });\n};\n"
+      "fn": "on.input.in = function() {\n  output({ out: $.write('in', underscore_string.unescapeHTML($.in)) });\n};\n"
     }
   ],
   "twigs": []

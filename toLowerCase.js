@@ -16,7 +16,7 @@ module.exports = {
         fn: function __IN__(data, x, source, state, input, output) {
           var r = function() {
             output({
-              out: data.toLowerCase()
+              out: $.write('in', $.in.toLowerCase())
             });
           }.call(this);
           return {

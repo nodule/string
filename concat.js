@@ -19,9 +19,9 @@ module.exports = {
       }
     }
   },
-  fn: function concat(input, output, state, done, cb, on) {
+  fn: function concat(input, $, output, state, done, cb, on) {
     var r = function() {
-      output.out = String.prototype.concat.apply(input.in);
+      output.out = $.write('in', String.prototype.concat.apply($.in));
     }.call(this);
     return {
       output: output,

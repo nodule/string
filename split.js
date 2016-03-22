@@ -36,30 +36,28 @@ module.exports = {
       }
     }
   },
-  fn: function split(input, output, state, done, cb, on) {
+  fn: function split(input, $, output, state, done, cb, on) {
     var r = function() {
       try {
-
-        if (input.regexp) {
-
-          var m = input.regexp.match(/^\/(.*)\/([gmi]*)/);
+        if ($.regexp) {
+          var m = $.regexp.match(/^\/(.*)\/([gmi]*)/);
           if (m.length === 3) {
             var re = new RegExp(m[1], m[2]);
             output({
-              out: input.in.split(re)
+              out: $.write('in', $.in.split(re))
             });
           } else {
             output({
-              error: ['RegExp not recognized:', input.regexp, 'required format: /..../gm'].join(' ')
+              error: $.create(new Error(['RegExp not recognized:', $.regexp, 'required format: /..../gm'].join(' ')))
             });
           }
-        } else if (input.seperator) {
+        } else if ($.seperator) {
           output({
-            out: input.in.split(input.seperator)
+            out: $.write('in', $.in.split($.seperator))
           });
         } else {
           output({
-            error: 'no input seperator or regexp'
+            error: $.create(Error('no input seperator or regexp'))
           });
         }
 
@@ -67,7 +65,7 @@ module.exports = {
 
       } catch (err) {
         output({
-          error: err
+          error: $.create(err)
         });
         done();
       }

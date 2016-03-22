@@ -15,7 +15,9 @@ module.exports = {
         required: true,
         fn: function __IN__(data, x, source, state, input, output, underscore_string) {
           var r = function() {
-            underscore_string.insert(data, input.index, input.substring);
+            output({
+              out: $.write('in', underscore_string.insert($.in, $.index, $.substring))
+            });
           }.call(this);
           return {
             state: state,
