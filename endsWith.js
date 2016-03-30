@@ -13,7 +13,7 @@ module.exports = {
         type: "string",
         async: true,
         required: true,
-        fn: function __IN__(data, x, source, state, input, output, underscore_string) {
+        fn: function __IN__(data, source, state, input, $, output, underscore_string) {
           var r = function() {
             output({
               out: $.write('in', underscore_string.endsWith($.in, $.substring))
